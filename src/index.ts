@@ -1,18 +1,20 @@
 // src/index.ts
 import express from "express";
 // import {googleapis} from "googleapis"
-import helmet from "helmet";
-import cors from "cors";
-import axios from "axios";
-import session from 'express-session';
+
+
+// import helmet from "helmet";
+// import cors from "cors";
+// import axios from "axios";
+// import session from 'express-session';
 
 import dotenv from 'dotenv';
 dotenv.config();
 
-import {moduleManagerInstance} from "./core/moduleManager";
+// import {moduleManagerInstance} from "./core/moduleManager";
 
-import { register as register_auth } from './auth/auth_general';
-import { register as register_broadcast } from './broadcastRoom/room_general';
+// import { register as register_auth } from './auth/auth_general';
+// import { register as register_broadcast } from './broadcastRoom/room_general';
 
 
 const app: express.Application = express();
