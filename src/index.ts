@@ -15,20 +15,16 @@ import { register as register_auth } from './auth/auth_general';
 import { register as register_broadcast } from './broadcastRoom/room_general';
 
 
-
-
-console.log(process.env);
-
 const app: express.Application = express();
 const port = process.env.PORT || 3000;
 
-app.use(express.json());
+// app.use(express.json());
 
-app.use(helmet());
-app.use(cors({
-  origin: process.env.ORIGIN,
-  credentials: true
-}));
+// app.use(helmet());
+// app.use(cors({
+//   origin: process.env.ORIGIN,
+//   credentials: true
+// }));
 
 app.use(express.text());
 
@@ -36,12 +32,12 @@ app.listen(port, () => {
   console.log(`server is listening on ${port}`);
 });
 
-app.use(session({
-  secret: 'mySecret',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: false }
-}));
+// app.use(session({
+//   secret: 'mySecret',
+//   resave: false,
+//   saveUninitialized: true,
+//   cookie: { secure: false }
+// }));
 
 // register_auth(app, moduleManagerInstance);
 
