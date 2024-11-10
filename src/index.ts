@@ -43,9 +43,9 @@ app.use(session({
   cookie: { secure: false }
 }));
 
-register_auth(app, moduleManagerInstance);
+// register_auth(app, moduleManagerInstance);
 
-register_broadcast(app, moduleManagerInstance);
+// register_broadcast(app, moduleManagerInstance);
 
 // Homepage
 app.get("/", (req, res) => {
